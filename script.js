@@ -29,7 +29,7 @@ navItems.forEach(item => {
 
 // Typing Animation
 const typingText = document.querySelector('.typing-text');
-const words = ['Developer', 'Programmer', 'Learner'];
+const words = ['Full Stack Developer', 'Software Engineer', 'Problem Solver'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

@@ -363,11 +363,36 @@ section {
     100% { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
 }
 
-/* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .about-text p {
@@ -378,7 +403,7 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1.5rem;
 }
 
