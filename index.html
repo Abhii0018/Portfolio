@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Kumar | Portfolio</title>
     <meta name="description" content="Portfolio of Abhishek Kumar, a CSE Student and Full Stack Developer.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="abhishek_avatar.png">
@@ -14,6 +14,11 @@
 </head>
 
 <body>
+    <!-- Floating particle canvas -->
+    <canvas id="particles-canvas"></canvas>
+    <!-- Grid dot overlay -->
+    <div class="grid-overlay"></div>
+
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
@@ -36,6 +41,8 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
         <div class="container hero-container">
             <div class="hero-content reveal">
                 <p class="greeting">Hi, my name is</p>
@@ -62,7 +69,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about bg-alt">
         <div class="container">
             <h2 class="section-title reveal">About Me</h2>
             <div class="about-content reveal">
@@ -282,10 +289,12 @@
                     </div>
                 </div>
 
-                <!-- Training & Certifications -->
+                <!-- Training & Certifications – Creative Card Grid -->
                 <div class="timeline-col reveal" style="transition-delay: 200ms;">
-                    <h2 class="section-title">Training & Certificates <i class="fas fa-certificate"></i></h2>
-                    <div class="timeline">
+                    <h2 class="section-title">Training &amp; Certificates <i class="fas fa-certificate"></i></h2>
+
+                    <!-- Java Training (timeline style) -->
+                    <div class="timeline" style="margin-bottom: 2.5rem;">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <span class="timeline-date">Jun–Jul 2025</span>
@@ -295,52 +304,115 @@
                                 <li>Developed a GUI-based quiz application using Java Swing and AWT</li>
                                 <li>Implemented event handling, interactive UI components, and score tracking</li>
                                 <li>Strengthened understanding of MVC architecture and OOP principles</li>
-                                <li>
-                                    <a href="https://www.linkedin.com/posts/abhisheekkk_java-guiskills-continuouslearning-activity-7364844395126259713-TR98?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link">
-                                        <i class="fas fa-external-link-alt"></i> View Certificate
-                                    </a>
-                                </li>
                             </ul>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h3>Certifications</h3>
-                            <ul class="timeline-list certificates">
-                                <li style="margin-bottom: 20px;">
-                                    <i class="fas fa-award" style="color: var(--primary-color);"></i>
-                                    <div>
-                                        <a href="https://www.linkedin.com/posts/abhisheekkk_learning-computationaltheory-automata-activity-7360078811188654080-KlJ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link-inline">
-                                            Computational Theory – Infosys Springboard (Aug 2024) <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom: 20px;">
-                                    <i class="fas fa-award" style="color: var(--primary-color);"></i>
-                                    <div>
-                                        <a href="https://www.linkedin.com/posts/abhisheekkk_successfully-completed-the-nptel-course-activity-7340728874109980672-8azv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link-inline">
-                                            Social Networks – NPTEL / IIT Madras (Apr 2024) <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-award" style="color: var(--primary-color);"></i>
-                                    <div>
-                                        <a href="https://www.linkedin.com/posts/abhisheekkk_first-certificate-in-markup-language-activity-7126557616939413504-swga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link-inline">
-                                            Responsive Web Design – FreeCodeCamp (Nov 2023) <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h3>Achievements</h3>
-                            <ul class="timeline-list">
-                                <li>Hacker Rank Skill Certifications (JavaScript & C++)</li>
-                                <li>Solved 200+ Data Structures & Algorithms Problems across LeetCode, Hacker Rank</li>
-                            </ul>
+                            <a href="https://www.linkedin.com/posts/abhisheekkk_java-guiskills-continuouslearning-activity-7364844395126259713-TR98?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
                         </div>
                     </div>
+
+                    <!-- Interactive Flip Cert Cards -->
+                    <div class="cert-grid">
+
+                        <!-- Infosys Springboard -->
+                        <div class="cert-card cert-infosys reveal-scale">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-brain"></i></div>
+                                    <div>
+                                        <div class="cert-name">Computational Theory</div>
+                                        <div class="cert-issuer">Infosys Springboard</div>
+                                    </div>
+                                    <span class="cert-date">Aug 2024</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Automata theory, formal languages, and computational complexity — foundational CS theory.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_learning-computationaltheory-automata-activity-7360078811188654080-KlJ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NPTEL -->
+                        <div class="cert-card cert-nptel reveal-scale" style="transition-delay:80ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-network-wired"></i></div>
+                                    <div>
+                                        <div class="cert-name">Social Networks</div>
+                                        <div class="cert-issuer">NPTEL / IIT Madras</div>
+                                    </div>
+                                    <span class="cert-date">Apr 2024</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Graph theory, network analysis and social media algorithms from IIT Madras faculty.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_successfully-completed-the-nptel-course-activity-7340728874109980672-8azv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FreeCodeCamp -->
+                        <div class="cert-card cert-fcc reveal-scale" style="transition-delay:160ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-globe"></i></div>
+                                    <div>
+                                        <div class="cert-name">Responsive Web Design</div>
+                                        <div class="cert-issuer">freeCodeCamp</div>
+                                    </div>
+                                    <span class="cert-date">Nov 2023</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>HTML5, CSS3, Flexbox, Grid, and accessibility best practices for modern web interfaces.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_first-certificate-in-markup-language-activity-7126557616939413504-swga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HackerRank -->
+                        <div class="cert-card cert-java reveal-scale" style="transition-delay:240ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-star"></i></div>
+                                    <div>
+                                        <div class="cert-name">Skill Certifications</div>
+                                        <div class="cert-issuer">HackerRank</div>
+                                    </div>
+                                    <span class="cert-date">JS &amp; C++</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Certified in JavaScript and C++ programming via HackerRank's official skill assessment platform.</p>
+                                    <a href="https://www.hackerrank.com/profile/abhisheksah018" target="_blank" class="cert-back-btn">
+                                        <i class="fas fa-external-link-alt"></i> View Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /cert-grid -->
+
+                    <!-- Achievements -->
+                    <div class="achievements-row">
+                        <div class="achievement-badge"><i class="fas fa-trophy"></i><span>200+ DSA Problems solved across LeetCode &amp; HackerRank</span></div>
+                        <div class="achievement-badge"><i class="fas fa-code"></i><span>MERN Stack full-stack applications deployed to production</span></div>
+                    </div>
+
                 </div>
 
             </div>
@@ -360,25 +432,25 @@
                     <h3>LeetCode</h3>
                     <p>Consistent problem solver focusing on Data Structures and Algorithms.</p>
                     <div style="margin: 1.5rem 0;">
-                        <span style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">200+</span>
+                        <span style="font-size: 2.2rem; font-weight: 800; color: var(--text-primary);">200+</span>
                         <div style="color: var(--text-secondary); font-size: 0.9rem;">Questions Solved</div>
                     </div>
                     <a href="https://leetcode.com/u/Abhiii_KumaR/" target="_blank" class="btn btn-outline"
                         style="width: 100%; justify-content: center;">View Profile</a>
                 </div>
 
-                <!-- GeeksforGeeks Card -->
+                <!-- TakeUForward Card -->
                 <div class="service-card reveal" style="transition-delay: 100ms;">
-                    <div class="service-icon" style="color: #2f8D46; background: rgba(47, 141, 70, 0.1);"><i
-                            class="fas fa-laptop-code"></i></div>
-                    <h3>GeeksforGeeks</h3>
-                    <p>Active contributor and problem solver on the GeeksforGeeks platform.</p>
+                    <div class="service-icon" style="color: #f97316; background: rgba(249, 115, 22, 0.1);"><i
+                            class="fas fa-fire"></i></div>
+                    <h3>TakeUForward</h3>
+                    <p>Actively practising Striver's A2Z DSA Sheet — structured problem solving from basics to advanced.</p>
                     <div style="margin: 1.5rem 0;">
-                        <span style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">25+</span>
-                        <div style="color: var(--text-secondary); font-size: 0.9rem;">Questions Solved</div>
+                        <span style="font-size: 2.2rem; font-weight: 800; color: var(--text-primary);">64+</span>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">Problems on A2Z Sheet</div>
                     </div>
-                    <a href="https://www.geeksforgeeks.org/profile/abhishek02eo" target="_blank" class="btn btn-outline"
-                        style="width: 100%; justify-content: center;">View Profile</a>
+                    <a href="https://takeuforward.org/profile/Abhiisah" target="_blank" class="btn btn-outline"
+                        style="width: 100%; justify-content: center; border-color: #f97316; color: #f97316;">View Profile</a>
                 </div>
 
             </div>
@@ -460,7 +532,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Made by Abhishek Kumar</p>
+            <p>Made with <span style="color:#f43f5e;">&#10084;</span> by Abhishek Kumar</p>
         </div>
     </footer>
 
