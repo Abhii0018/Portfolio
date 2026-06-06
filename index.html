@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar | Portfolio</title>
+    <meta name="description" content="Portfolio of Abhishek Kumar, a CSE Student and Full Stack Developer.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="abhishek_avatar.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating particle canvas -->
+    <canvas id="particles-canvas"></canvas>
+    <!-- Grid dot overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Abhishek<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="title">Abhishek Kumar</h1>
+                <h2 class="tagline">I am a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="intro">B.Tech CSE Student @ LPU | Full Stack Developer | Problem Solver<br>I build scalable web
+                    applications and solve real-world problems using code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="Abhishek_Kumar_Resume.pdf"
+                        download="Abhishek_Kumar_Resume.pdf" class="btn btn-outline"><i
+                            class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <div class="image-wrapper">
+                    <div class="abstract-shape image-mask">
+                        <img src="abhishek.jpeg" alt="Abhishek Kumar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-image">
+                    <img src="student_cartoon.png" alt="Abhishek Kumar">
+                </div>
+                <div class="about-details">
+                    <div class="about-text">
+                        <p>I am a B.Tech Computer Science student at Lovely Professional University (LPU), focused on full-stack development with a stronger interest in backend systems and real-time applications.</p>
+                        <p>I enjoy turning ideas into practical, user-focused applications and continuously work on improving my backend and system design skills.</p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-terminal"></i></div>
+                            <span class="highlight-number">200+</span>
+                            <span class="highlight-label">DSA Problems Solved</span>
+                            <div class="tech-pills">
+                                <span class="tech-pill">LeetCode</span>
+                                <span class="tech-pill">HackerRank</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-layer-group"></i></div>
+                            <span class="highlight-number">Tech</span>
+                            <span class="highlight-label">MERN Stack Expert</span>
+                            <div class="tech-pills">
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <h3>Education</h3>
+                            <p>B.Tech CSE</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Interest</h3>
+                            <p>Full-Stack Dev</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Focus</h3>
+                            <p>DSA & Problem Solving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span><span>Java</span><span>C++</span><span>C</span><span>PHP</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+                <!-- Frameworks -->
+                <div class="skill-category reveal" style="transition-delay: 100ms;">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Tech</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>SQL</span><span>Tailwind CSS</span><span>Redux Toolkit</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category reveal" style="transition-delay: 200ms;">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB Atlas</span><span>Postman</span><span>Git</span><span>WebSocket</span><span>JWT</span><span>REST APIs</span><span>Vercel</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category reveal" style="transition-delay: 300ms;">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span>Communication</span><span>Problem-Solving</span><span>Team Collaboration</span><span>Time Management</span><span>Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 (SwapShip) -->
+                <div class="project-card reveal highlight-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=600&q=80"
+                            alt="SwapShip - Peer-to-Peer Marketplace">
+                        <div class="project-links flex-column">
+                            <div class="project-hover-details">
+                                <h4>Marketplace & Exchange</h4>
+                                <p>Peer-to-peer platform for selling, swapping, and shipment tracking.</p>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="https://github.com/Abhii0018/SwapShip" target="_blank"
+                                    aria-label="View Code" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://swapship.onrender.com" target="_blank"
+                                    aria-label="Live Demo" title="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date" style="color: #8b5cf6;"><i class="fas fa-star"
+                                style="margin-right: 4px;"></i>Featured Project • 2026</span>
+                        <h3>SwapShip - Peer-to-Peer Marketplace</h3>
+                        <p>A peer-to-peer marketplace and exchange platform where users can sell, swap, chat, make payments, and track shipments. Features OTP verification, Razorpay payments, Cloudinary image storage, chat, exchange requests, and delivery confirmation.</p>
+                        <div class="project-tech">
+                            <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Razorpay</span><span>Socket.IO</span><span>Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (AttendX) -->
+                <div class="project-card reveal" style="transition-delay: 100ms;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80"
+                            alt="AttendX - Automated Attendance System">
+                        <div class="project-links flex-column">
+                            <div class="project-hover-details">
+                                <h4>Efficiency & Privacy</h4>
+                                <p>Centralized platform for automated attendance tracking and role-based management.</p>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="https://github.com/Abhii0018/AttendX" target="_blank"
+                                    aria-label="View Code" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://automated-attendance-system-fronten-beta.vercel.app/" target="_blank"
+                                    aria-label="Live Demo" title="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Feb 2026</span>
+                        <h3>AttendX - Automated Attendance System</h3>
+                        <p>A full-stack system that replaces manual tracking with a centralized, role-based platform. Features RESTful APIs for student/teacher management, automated email notifications (Nodemailer), and optimized MongoDB queries.</p>
+                        <div class="project-tech">
+                            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Spotify Clone) -->
+                <div class="project-card reveal" style="transition-delay: 200ms;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?auto=format&fit=crop&w=600&q=80"
+                            alt="Spotify Clone">
+                        <div class="project-links flex-column">
+                            <div class="project-hover-details">
+                                <h4>Seamless Streaming</h4>
+                                <p>Full-stack music streaming platform with search, playback, and personalized playlists.</p>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="https://github.com/Abhii0018/spotify-clone" aria-label="Github"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://spotify-lovat-nine.vercel.app/" target="_blank"
+                                    aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Nov 2025</span>
+                        <h3>Spotify Clone</h3>
+                        <p>Developed a high-performance music streaming application using React and Tailwind CSS. Implemented complex state management for audio playback and integration with music discovery features.</p>
+                        <div class="project-tech">
+                            <span>React.js</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="timeline-section">
+        <div class="container">
+            <div class="timeline-grid">
+
+                <!-- Education -->
+                <div class="timeline-col reveal">
+                    <h2 class="section-title">Education <i class="fas fa-graduation-cap"></i></h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2023 – Present</span>
+                            <h3>Lovely Professional University</h3>
+                            <p class="timeline-subtitle">Bachelor of Technology - Computer Science and Engineering</p>
+                            <p>CGPA: 7.0</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2021 – 2022</span>
+                            <h3>Milia Convent English School</h3>
+                            <p class="timeline-subtitle">Intermediate</p>
+                            <p>Percentage: 67%</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2019 – 2020</span>
+                            <h3>Milia Convent English School</h3>
+                            <p class="timeline-subtitle">Matriculation</p>
+                            <p>Percentage: 79%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training & Certifications – Creative Card Grid -->
+                <div class="timeline-col reveal" style="transition-delay: 200ms;">
+                    <h2 class="section-title">Training &amp; Certificates <i class="fas fa-certificate"></i></h2>
+
+                    <!-- Java Training (timeline style) -->
+                    <div class="timeline" style="margin-bottom: 2.5rem;">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Jun–Jul 2025</span>
+                            <h3>Java GUI Application Development</h3>
+                            <p class="timeline-subtitle">Academic Project</p>
+                            <ul class="timeline-list">
+                                <li>Developed a GUI-based quiz application using Java Swing and AWT</li>
+                                <li>Implemented event handling, interactive UI components, and score tracking</li>
+                                <li>Strengthened understanding of MVC architecture and OOP principles</li>
+                            </ul>
+                            <a href="https://www.linkedin.com/posts/abhisheekkk_java-guiskills-continuouslearning-activity-7364844395126259713-TR98?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI" target="_blank" class="certificate-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Flip Cert Cards -->
+                    <div class="cert-grid">
+
+                        <!-- Infosys Springboard -->
+                        <div class="cert-card cert-infosys reveal-scale">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-brain"></i></div>
+                                    <div>
+                                        <div class="cert-name">Computational Theory</div>
+                                        <div class="cert-issuer">Infosys Springboard</div>
+                                    </div>
+                                    <span class="cert-date">Aug 2024</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Automata theory, formal languages, and computational complexity — foundational CS theory.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_learning-computationaltheory-automata-activity-7360078811188654080-KlJ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NPTEL -->
+                        <div class="cert-card cert-nptel reveal-scale" style="transition-delay:80ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-network-wired"></i></div>
+                                    <div>
+                                        <div class="cert-name">Social Networks</div>
+                                        <div class="cert-issuer">NPTEL / IIT Madras</div>
+                                    </div>
+                                    <span class="cert-date">Apr 2024</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Graph theory, network analysis and social media algorithms from IIT Madras faculty.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_successfully-completed-the-nptel-course-activity-7340728874109980672-8azv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FreeCodeCamp -->
+                        <div class="cert-card cert-fcc reveal-scale" style="transition-delay:160ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-globe"></i></div>
+                                    <div>
+                                        <div class="cert-name">Responsive Web Design</div>
+                                        <div class="cert-issuer">freeCodeCamp</div>
+                                    </div>
+                                    <span class="cert-date">Nov 2023</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>HTML5, CSS3, Flexbox, Grid, and accessibility best practices for modern web interfaces.</p>
+                                    <a href="https://www.linkedin.com/posts/abhisheekkk_first-certificate-in-markup-language-activity-7126557616939413504-swga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9TbZsBa2WBvXNZRZ7P8asC3YRE5m9HZTI"
+                                        target="_blank" class="cert-back-btn">
+                                        <i class="fab fa-linkedin"></i> View on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HackerRank -->
+                        <div class="cert-card cert-java reveal-scale" style="transition-delay:240ms;">
+                            <div class="cert-card-inner">
+                                <div class="cert-front">
+                                    <div class="cert-top-bar"></div>
+                                    <div class="cert-icon-wrap"><i class="fas fa-star"></i></div>
+                                    <div>
+                                        <div class="cert-name">Skill Certifications</div>
+                                        <div class="cert-issuer">HackerRank</div>
+                                    </div>
+                                    <span class="cert-date">JS &amp; C++</span>
+                                </div>
+                                <div class="cert-back">
+                                    <div class="cert-top-bar"></div>
+                                    <p>Certified in JavaScript and C++ programming via HackerRank's official skill assessment platform.</p>
+                                    <a href="https://www.hackerrank.com/profile/abhisheksah018" target="_blank" class="cert-back-btn">
+                                        <i class="fas fa-external-link-alt"></i> View Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /cert-grid -->
+
+                    <!-- Achievements -->
+                    <div class="achievements-row">
+                        <div class="achievement-badge"><i class="fas fa-trophy"></i><span>200+ DSA Problems solved across LeetCode &amp; HackerRank</span></div>
+                        <div class="achievement-badge"><i class="fas fa-code"></i><span>MERN Stack full-stack applications deployed to production</span></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profiles" class="coding-profiles bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Coding Profiles</h2>
+            <div class="services-grid">
+
+                <!-- LeetCode Card -->
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color: #FFA116; background: rgba(255, 161, 22, 0.1);"><i
+                            class="fas fa-code"></i></div>
+                    <h3>LeetCode</h3>
+                    <p>Consistent problem solver focusing on Data Structures and Algorithms.</p>
+                    <div style="margin: 1.5rem 0;">
+                        <span style="font-size: 2.2rem; font-weight: 800; color: var(--text-primary);">200+</span>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">Questions Solved</div>
+                    </div>
+                    <a href="https://leetcode.com/u/Abhiii_KumaR/" target="_blank" class="btn btn-outline"
+                        style="width: 100%; justify-content: center;">View Profile</a>
+                </div>
+
+                <!-- TakeUForward Card -->
+                <div class="service-card reveal" style="transition-delay: 100ms;">
+                    <div class="service-icon" style="color: #f97316; background: rgba(249, 115, 22, 0.1);"><i
+                            class="fas fa-fire"></i></div>
+                    <h3>TakeUForward</h3>
+                    <p>Actively practising Striver's A2Z DSA Sheet — structured problem solving from basics to advanced.</p>
+                    <div style="margin: 1.5rem 0;">
+                        <span style="font-size: 2.2rem; font-weight: 800; color: var(--text-primary);">100+</span>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">Problems on A2Z Sheet</div>
+                    </div>
+                    <a href="https://takeuforward.org/profile/Abhiisah" target="_blank" class="btn btn-outline"
+                        style="width: 100%; justify-content: center; border-color: #f97316; color: #f97316;">View Profile</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Feel free to reach out to me for any project inquiries, collaboration opportunities, or just to
+                        say hi.</p>
+
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:abhisheksah018@gmail.com">abhisheksah018@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919263778377">+91 9263778377</a>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Phagwara, Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhisheekkk/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Abhii0018" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/Abhiii_KumaR/" target="_blank" aria-label="LeetCode"
+                            title="LeetCode Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114l5.313-5.693a.5.5 0 0 1 .758-.06l3.966 3.887a.5.5 0 0 1 .038.714l-4.402 4.41a.5.5 0 0 1-.714.004V11.38a1.377 1.377 0 0 0-1.879-1.996l4.402-4.409a3.25 3.25 0 0 0-.256-4.646L12.39.436A1.372 1.372 0 0 0 13.483 0zm4.515 15.347c-.201 0-.398.077-.546.223l-1.933 1.933a.77.77 0 0 0-.223.546.77.77 0 0 0 .223.545l1.933 1.934c.148.146.345.223.546.223h3.551c.201 0 .398-.077.546-.223l1.933-1.934a.77.77 0 0 0 .223-.545.77.77 0 0 0-.223-.546l-1.933-1.933a.77.77 0 0 0-.546-.223h-3.551zM5.56 16.592c-.201 0-.398.077-.546.223l-1.933 1.933a.77.77 0 0 0-.223.546.77.77 0 0 0 .223.545l1.933 1.934c.148.146.345.223.546.223h3.551c.201 0 .398-.077.546-.223l1.933-1.934a.77.77 0 0 0 .223-.545.77.77 0 0 0-.223-.546l-1.933-1.933a.77.77 0 0 0-.546-.223H5.56z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal" style="transition-delay: 200ms;">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Made with <span style="color:#f43f5e;">&#10084;</span> by Abhishek Kumar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
